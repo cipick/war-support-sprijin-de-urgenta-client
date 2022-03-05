@@ -28,7 +28,7 @@ const resourceTypeBuilder = ({ resourceType }: { resourceType: string }) => {
 const SignUpResources = ({ type }: { type: string }) => {
   const { t } = useTranslation()
   const { categories } = useSelector((state: State) => state)
-  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false)
 
   const [selectedResourceTypes, setSelectedResourceTypes] = useState<string[]>(
     []
@@ -37,7 +37,7 @@ const SignUpResources = ({ type }: { type: string }) => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const isChecked = event.target.checked
     const value = event.target.value
-    setSubmitSuccess(false);
+    setSubmitSuccess(false)
 
     if (isChecked && !selectedResourceTypes.includes(value))
       setSelectedResourceTypes([...selectedResourceTypes, value])
@@ -70,9 +70,11 @@ const SignUpResources = ({ type }: { type: string }) => {
             </Checkbox>
           </div>
         ))}
-        <p className="mt-8 text-sm font-semibold text-gray-500">
-          {t('signup.resources.fillInDetails')}
-        </p>
+        {selectedResourceTypes.length > 0 && (
+          <p className="mt-8 text-sm font-semibold text-gray-500">
+            {t('signup.resources.fillInDetails')}
+          </p>
+        )}
       </div>
       {selectedResourceTypes.length > 0 &&
         selectedResourceTypes.map((resourceType) => (
@@ -88,7 +90,7 @@ const SignUpResources = ({ type }: { type: string }) => {
           {
             disabled: selectedResourceTypes.length === 0,
             direction: 'forward',
-            onClick: handleSubmit
+            onClick: handleSubmit,
           },
         ]}
       />
