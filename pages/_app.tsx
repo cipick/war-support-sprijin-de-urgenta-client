@@ -24,6 +24,7 @@ import { State } from '@/store/types/state.type'
 import { useRouter } from 'next/router'
 import LoadingSpinner from '@/components/LoadingSpinner'
 import GTagScript from '@/components/GTagScript'
+import ErrorBoundary from '@/components/ErrorBoundary'
 
 i18n.use(initReactI18next).init({
   interpolation: { escapeValue: false },
@@ -66,7 +67,9 @@ const WrappedApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <Layout>
       <GTagScript />
-      <Component {...pageProps} />
+      <ErrorBoundary>
+        <Component {...pageProps} />
+      </ErrorBoundary>
     </Layout>
   )
 }
