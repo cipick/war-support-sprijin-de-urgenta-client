@@ -13,8 +13,8 @@ import '../styles/globals.css'
 
 import { withStore } from '../store'
 import {
-  deauthenticate,
   reauthenticate,
+  deauthenticate,
   verificationFailed,
 } from '@/store/reducers/auth'
 import { useDataWithToken } from '@/hooks/useData'
@@ -55,6 +55,7 @@ const WrappedApp: FC<AppProps> = ({ Component, pageProps }) => {
     if (clientOnly) {
       if (data) {
         dispatch(verificationFailed())
+        dispatch(deauthenticate())
       }
       if (pageProps.protected && pageProps.redirectTo) {
         router.push(pageProps.redirectTo)
