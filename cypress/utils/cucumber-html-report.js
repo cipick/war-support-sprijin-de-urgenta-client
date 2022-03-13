@@ -5,5 +5,5 @@ report.generate({
   reportPath: './reports/cucumber',
   hideMetadata: true,
   pageTitle: 'Sprijin De Urgenta E2E tests results | Code4ro',
-  reportName: 'Sprijin De Urgenta',
+  reportName: 'Sprijin De Urgenta  E2E',
 })
