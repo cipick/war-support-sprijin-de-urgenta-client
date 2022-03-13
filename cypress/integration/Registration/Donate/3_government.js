@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker'
 
 Given(/^I am a Government user$/, function () {
   cy.wait(1000)
-  cy.get('select[name="userType"]').select(1)
+  cy.get('select[name="userType"]').select(3)
 })
 
 Given(/^I enter Government details$/, function () {

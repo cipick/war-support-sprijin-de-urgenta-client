@@ -1,4 +1,4 @@
-Feature: Registration Donate
+Feature: Registration Request
 
   Background:
     Given I want to request
