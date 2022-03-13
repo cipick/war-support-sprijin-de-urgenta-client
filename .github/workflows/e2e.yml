@@ -51,13 +51,10 @@ jobs:
             reports/cucumber
             cypress/videos
             cypress/screeenshots
-      - name: HTML Preview
-        id: html_preview
-        uses: pavi2410/html-preview-action@v2
+      - name: Deploy report page
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          html_file: 'reports/cucumber/index.html'
-      - name: PR comment
-        uses: github-actions-up-and-running/pr-comment@v1.0.0
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          message: ${{ format('[Click here to preview HTML page in browser]({0})', steps.html_preview.outputs.url) }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports/cucumber
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
