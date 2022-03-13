@@ -8,6 +8,5 @@ Given(/^I am a Government user$/, function () {
 
 Given(/^I enter Government details$/, function () {
   cy.get('input[name="business_name"]').type(faker.company.companyName())
-  cy.get('input[name="identification_no"]').type(faker.random.alphaNumeric(8))
   cy.findByText('Pasul urmator').click()
 })
