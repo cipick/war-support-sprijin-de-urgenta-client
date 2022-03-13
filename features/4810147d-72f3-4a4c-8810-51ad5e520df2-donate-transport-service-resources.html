@@ -520,14 +520,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                 
             </div>
             <h1>Feature:
-                <small>Request Other Resources</small>
+                <small>Donate Transport Service Resources</small>
             </h1>
             <p>
            <p><strong>File name:</strong>
-                Other.feature
+                DonateService.feature
             </p>
             <p><strong>Relative path:</strong>
-                Other.feature</p>
+                DonateService.feature</p>
         </div>
 
         <div class="clearfix"></div>
@@ -564,7 +564,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">1</div>
+                <div class="total">2</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -584,8 +584,18 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">0.00 %</td>
                     
+                    
+                    <tr>
+                        <td>
+                            <p data-toggle="tooltip" data-placement="left" title="Scenario has no step implmentation.">
+                                <i class="fa fa-question-circle not-defined-color"></i>
+                                Not defined
+                            </p>
+                        </td>
+                        <td class="percentage">100.00 %</td>
+                    </tr>
                     
                     </tr>
                     
@@ -715,7 +725,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Other Resource</small></h2>
+                <h2>Scenario: <small>Donate transport goods</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -728,22 +738,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                     
                         <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">2</span>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">4</span>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
                     
                         <li>
-                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
+                            <span class="step not-defined-background" data-toggle="tooltip" title="Scenario has nop step implementation.">1</span>
                         </li>
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
-                        </li>
-                    
-
                     
 
                     
@@ -828,7 +838,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -886,7 +896,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I click other resource
+                                        I click services resource
                                         
                                     
 
@@ -934,8 +944,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step has no implementation.">
+                                            <i class="fa fa-question-circle fa-2x not-defined-color"></i>
                                         </div>
                                     
                                 
@@ -944,7 +954,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request other resource button
+                                        I click donate transport goods button
                                         
                                     
 
@@ -953,6 +963,20 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 </div>
 
                                 
+                                    
+                                        <pre class="info">
+// With Callbacks
+Given (/^I click donate transport goods button$/, (callback) => {
+    // Write code here that turns the phrase above into concrete actions
+    callback(null, 'pending');
+});
+
+// With Promises
+Given (/^I click donate transport goods button$/, () => {
+    // Write code here that turns the phrase above into concrete actions
+    return Promise.resolve('pending');
+});
+                                        </pre>
                                     
 
                                     
@@ -992,8 +1016,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1002,7 +1026,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I fill the request other resource form
+                                        I fill the donate transport goods form
                                         
                                     
 
@@ -1050,8 +1074,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1072,8 +1096,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     
 
                                     
-                                        <a href="#error0-5-error" data-toggle="collapse">+ Show Error</a>
-                                    
 
                                     
 
@@ -1086,46 +1108,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                             </div>
 
                         
-                            
-                                <div id="error0-5-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is detached from the DOM.
-
-`(button type="submit" class="w-full")...(/button)`
-
-Cypress requires elements be attached in the DOM to interact with them.
-
-The previous command that ran was:
-
-  ) `cy.get()`
-
-This DOM element likely became detached somewhere between the previous and current command.
-
-Common situations why this happens:
-  - Your JS framework re-rendered asynchronously
-  - Your app code reacted to an event firing and removed the element
-
-You typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.
-
-https://on.cypress.io/element-has-detached-from-dom
-    at $Cy.ensureAttached (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:163896:76)
-    at runAllChecks (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:150523:12)
-    at retryActionability (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:150603:16)
-    at tryCatcher (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:13022:23)
-    at Function.Promise.attempt.Promise.try (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:10296:29)
-    at whenStable (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:168760:63)
-    at http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:168257:14
-    at tryCatcher (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:13022:23)
-    at Promise._settlePromiseFromHandler (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:10957:31)
-    at Promise._settlePromise (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:11014:18)
-    at Promise._settlePromise0 (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:11059:10)
-    at Promise._settlePromises (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:11139:18)
-    at Promise._fulfill (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:11083:18)
-    at http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:12697:46
-From Your Spec Code:
-    at Context.eval (http://127.0.0.1:3000/__cypress/tests?p=cypress/integration/Request/Other.feature:107:40)
-    at Context.resolveAndRunStepDefinition (http://127.0.0.1:3000/__cypress/tests?p=cypress/integration/Request/Other.feature:16872:29)
-    at Context.eval (http://127.0.0.1:3000/__cypress/tests?p=cypress/integration/Request/Other.feature:16193:35)</pre>
-                                </div>
                             
 
                             
@@ -1160,7 +1142,7 @@ From Your Spec Code:
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -1218,7 +1200,540 @@ From Your Spec Code:
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request other is created
+                                        donate transport service is created
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Donate transport people</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">4</span>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step not-defined-background" data-toggle="tooltip" title="Scenario has nop step implementation.">1</span>
+                        </li>
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I am a logged in user
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I want to donate
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I click services resource
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step has no implementation.">
+                                            <i class="fa fa-question-circle fa-2x not-defined-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I click donate transport people button
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+                                        <pre class="info">
+// With Callbacks
+Given (/^I click donate transport people button$/, (callback) => {
+    // Write code here that turns the phrase above into concrete actions
+    callback(null, 'pending');
+});
+
+// With Promises
+Given (/^I click donate transport people button$/, () => {
+    // Write code here that turns the phrase above into concrete actions
+    return Promise.resolve('pending');
+});
+                                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I fill the donate transport people form
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I submit the form
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I see the thank you for donation message
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        donate transport service is created
                                         
                                     
 
@@ -1311,11 +1826,11 @@ From Your Spec Code:
                     datasets: [{
                         data: [
                             0,
-                            1,
                             0,
                             0,
                             0,
-                            0
+                            0,
+                            2
                         ],
                         backgroundColor: [
                             "#26B99A",
