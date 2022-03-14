@@ -23,7 +23,7 @@ Given(/^I fill multiple donate food forms$/, function (dataTable) {
     cy.findAllByText('Adaugă').eq(0).click()
     cy.wait(1000)
 
-    if (elem.has_transportation) {
+    if (elem.has_transportation === 'true') {
       cy.get('#has_transportation_true').check()
     } else {
       cy.get('#has_transportation_false').check()

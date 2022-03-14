@@ -28,6 +28,15 @@ Feature: Donate Item Resources
     Then I see the thank you for donation message
     And donate item is created
 
+  Scenario: Donate Multiple General Hygiene item
+    Given I fill multiple donate general hygiene form
+      | has_transportation | county_coverage | town       | name       | quantity | unit_type | packaging_type | expiration_date |
+      | true               | AB              | Alba       | Gel de dus | 200      | baxuri    | sac            | 2090-12-12      |
+      | false              | IF              | Bucuresti  | Sapun      | 200      | l         | bax bidon 2l   | 2090-12-12      |
+    And I submit the form
+    Then I see the thank you for donation message
+    And donate item is created
+
   Scenario: Donate Feminine Hygiene item
     Given I click donate feminine hygiene button
     And I fill the donate feminine hygiene form
@@ -36,9 +45,11 @@ Feature: Donate Item Resources
     And donate item is created
 
   Scenario: Donate Multiple Feminine Hygiene item
-    Given I click donate feminine hygiene button
-    And I fill the donate feminine hygiene form
-    And I submit the form
+    Given I fill multiple donate feminine hygiene forms
+      | has_transportation | county_coverage | town       | name       | quantity | unit_type | packaging_type | expiration_date |
+      | true               | AB              | Alba       | Absorbante | 200      | baxuri    | sac            | 2090-12-12      |
+      | false              | IF              | Bucuresti  | Deodorant  | 200      | l         | bax bidon 2l   | 2090-12-12      |
+    When I click next step button
     Then I see the thank you for donation message
     And donate item is created
 
