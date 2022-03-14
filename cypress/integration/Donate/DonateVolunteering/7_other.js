@@ -11,4 +11,5 @@ Given(/^I fill the donate other volunteering form$/, function() {
   cy.selectMultiDropdown()
   cy.get('#town').type('test')
   cy.get('#description').type('description')
+  cy.get('#available_until').type('2030-12-12')
 });
