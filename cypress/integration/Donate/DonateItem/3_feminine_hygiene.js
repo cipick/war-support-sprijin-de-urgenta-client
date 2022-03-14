@@ -13,6 +13,7 @@ Given(/^I fill the donate feminine hygiene form$/, function () {
   cy.get('#quantity').type(100)
   cy.get('#unit_type').type('l')
   cy.get('#packaging_type').type('ambalaj plastic')
+  cy.get('#expiration_date').type('2030-12-12')
 })
 
 Given(/^I fill multiple donate feminine hygiene forms$/, function (dataTable) {

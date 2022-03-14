@@ -13,6 +13,7 @@ Given(/^I fill the donate food form$/, function () {
   cy.get('#quantity').type(100)
   cy.get('#unit_type').type('l')
   cy.get('#packaging_type').type('ambalaj plastic')
+  cy.get('#expiration_date').type('2030-12-12')
 })
 
 Given(/^I fill multiple donate food forms$/, function (dataTable) {
@@ -31,6 +32,7 @@ Given(/^I fill multiple donate food forms$/, function (dataTable) {
     cy.get('#quantity').type(elem.quantity)
     cy.get('#unit_type').type(elem.unit_type)
     cy.get('#packaging_type').type(elem.packaging_type)
+    cy.get('#expiration_date').type(elem.expiration_date)
     cy.get('form button[type="submit"]').click()
   })
 })

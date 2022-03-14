@@ -14,9 +14,9 @@ Feature: Donate Item Resources
 
   Scenario: Donate Multiple Food items
     Given I fill multiple donate food forms
-      | has_transportation | county_coverage | town       | name    | quantity | unit_type | packaging_type |
-      | true               | AB              | Alba       | Cartofi | 100      | kg        | sac            |
-      | false              | IF              | Bucuresti  | Lapte   | 200      | l         | bax bidon 2l   |
+      | has_transportation | county_coverage | town       | name    | quantity | unit_type | packaging_type | expiration_date |
+      | true               | AB              | Alba       | Cartofi | 100      | kg        | sac            | 2090-12-12      |
+      | false              | IF              | Bucuresti  | Lapte   | 200      | l         | bax bidon 2l   | 2090-12-12      |
     When I click next step button
     Then I see the thank you for donation message
     And donate item is created
