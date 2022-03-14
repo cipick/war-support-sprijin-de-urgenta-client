@@ -5,10 +5,7 @@ Given(/^I click donate food button$/, function () {
   cy.wait(1000)
 })
 
-Given(/^I fill the donate food form$/, function (dataTable) {
-  dataTable.hashes().forEach((elem) => {
-    console.log('elem', elem)
-  })
+Given(/^I fill the donate food form$/, function () {
   cy.get('#has_transportation_true').check()
   cy.selectMultiDropdown()
   cy.get('#town').type('test')
