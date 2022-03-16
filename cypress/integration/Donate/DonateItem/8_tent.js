@@ -1,7 +1,7 @@
 import { Given } from 'cypress-cucumber-preprocessor/steps'
 
 Given(/^I click donate tent button$/, function () {
-  cy.findAllByText('Adaugă').eq(5).click()
+  cy.findAllByText('Adaugă').eq(7).click()
   cy.wait(1000)
 })
 

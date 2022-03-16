@@ -67,6 +67,20 @@ Feature: Donate Item Resources
     Then I see the thank you for donation message
     And donate item is created
 
+  Scenario: Donate Medicine item
+    Given I click donate medicine button
+    And I fill the donate medicine form
+    And I submit the form
+    Then I see the thank you for donation message
+    And donate item is created
+
+  Scenario: Donate Sanitary item
+    Given I click donate sanitary item button
+    And I fill the donate sanitary item form
+    And I submit the form
+    Then I see the thank you for donation message
+    And donate item is created
+
   Scenario: Donate Tent item
     Given I click donate tent button
     And I fill the donate tent form

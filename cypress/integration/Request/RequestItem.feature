@@ -40,6 +40,20 @@ Feature: Request Item Resources
     Then I see the thank you for request message
     And request item is created
 
+  Scenario: Request Medicine item
+    Given I click request medicine item button
+    And I fill the request medicine item form
+    And I submit the form
+    Then I see the thank you for request message
+    And request item is created
+
+  Scenario: Request Sanitary item
+    Given I click request sanitary item button
+    And I fill the request sanitary item form
+    And I submit the form
+    Then I see the thank you for request message
+    And request item is created
+
   Scenario: Request Tent item
     Given I click request tent button
     And I fill the request tent form
