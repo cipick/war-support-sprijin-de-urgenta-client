@@ -520,14 +520,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                 
             </div>
             <h1>Feature:
-                <small>Request Item Resources</small>
+                <small>Donate Item Resources</small>
             </h1>
             <p>
            <p><strong>File name:</strong>
-                RequestItem.feature
+                DonateItem.feature
             </p>
             <p><strong>Relative path:</strong>
-                RequestItem.feature</p>
+                DonateItem.feature</p>
         </div>
 
         <div class="clearfix"></div>
@@ -564,7 +564,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">9</div>
+                <div class="total">12</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -575,7 +575,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">83.33 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -584,7 +584,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">16.67 %</td>
                     
                     
                     </tr>
@@ -642,7 +642,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Food item</small></h2>
+                <h2>Scenario: <small>Donate Food item</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -747,7 +747,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -863,7 +863,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request food button
+                                        I click donate food button
                                         
                                     
 
@@ -921,7 +921,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I fill the request food form
+                                        I fill the donate food form
                                         
                                     
 
@@ -1037,7 +1037,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -1095,7 +1095,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
                                         
                                     
 
@@ -1153,7 +1153,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request General Hygiene item</small></h2>
+                <h2>Scenario: <small>Donate Multiple Food items</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1170,7 +1170,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">8</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">7</span>
                         </li>
                     
 
@@ -1258,7 +1258,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -1374,7 +1374,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request general hygiene button
+                                        I fill multiple donate food forms
                                         
                                     
 
@@ -1413,63 +1413,79 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                         
                             
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
+                                <div class="scenario-scroll-bar">
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
+                                        <table class="table arguments">
+                                            
+                                            <tr>
+                                                
+                                                
+                                                    <th>has_transportation</th>
+                                                
+                                                    <th>county_coverage</th>
+                                                
+                                                    <th>town</th>
+                                                
+                                                    <th>name</th>
+                                                
+                                                    <th>quantity</th>
+                                                
+                                                    <th>unit_type</th>
+                                                
+                                                    <th>packaging_type</th>
+                                                
+                                                    <th>expiration_date</th>
+                                                
+                                            </tr>
 
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
+                                            
+                                                <tr>
+                                                    
+                                                    
+                                                        <td>true</td>
+                                                    
+                                                        <td>AB</td>
+                                                    
+                                                        <td>Alba</td>
+                                                    
+                                                        <td>Cartofi</td>
+                                                    
+                                                        <td>100</td>
+                                                    
+                                                        <td>kg</td>
+                                                    
+                                                        <td>sac</td>
+                                                    
+                                                        <td>2090-12-12</td>
+                                                    
+                                                </tr>
+                                            
+                                                <tr>
+                                                    
+                                                    
+                                                        <td>false</td>
+                                                    
+                                                        <td>IF</td>
+                                                    
+                                                        <td>Bucuresti</td>
+                                                    
+                                                        <td>Lapte</td>
+                                                    
+                                                        <td>200</td>
+                                                    
+                                                        <td>l</td>
+                                                    
+                                                        <td>bax bidon 2l</td>
+                                                    
+                                                        <td>2090-12-12</td>
+                                                    
+                                                </tr>
+                                            
+                                        </table>
                                     
-                                        I fill the request general hygiene form
-                                        
-                                    
-
-                                    
-
                                 </div>
 
                                 
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
                             
                         
 
@@ -1487,10 +1503,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">And </span>
+                                    <span class="keyword highlight">When </span>
 
                                     
-                                        I submit the form
+                                        I click next step button
                                         
                                     
 
@@ -1548,7 +1564,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -1606,7 +1622,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
                                         
                                     
 
@@ -1664,7 +1680,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Feminine Hygiene item</small></h2>
+                <h2>Scenario: <small>Donate General Hygiene item</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1769,7 +1785,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -1885,7 +1901,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request feminine hygiene button
+                                        I click donate general hygiene button
                                         
                                     
 
@@ -1943,7 +1959,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I fill the request feminine hygiene form
+                                        I fill the donate general hygiene form
                                         
                                     
 
@@ -2059,7 +2075,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -2117,7 +2133,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
                                         
                                     
 
@@ -2175,7 +2191,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Clothing item</small></h2>
+                <h2>Scenario: <small>Donate Multiple General Hygiene item</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -2192,7 +2208,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">8</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">7</span>
                         </li>
                     
 
@@ -2280,7 +2296,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -2396,7 +2412,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request clothing button
+                                        I fill multiple donate general hygiene form
                                         
                                     
 
@@ -2435,63 +2451,79 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                         
                             
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
+                                <div class="scenario-scroll-bar">
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
+                                        <table class="table arguments">
+                                            
+                                            <tr>
+                                                
+                                                
+                                                    <th>has_transportation</th>
+                                                
+                                                    <th>county_coverage</th>
+                                                
+                                                    <th>town</th>
+                                                
+                                                    <th>name</th>
+                                                
+                                                    <th>quantity</th>
+                                                
+                                                    <th>unit_type</th>
+                                                
+                                                    <th>packaging_type</th>
+                                                
+                                                    <th>expiration_date</th>
+                                                
+                                            </tr>
 
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
+                                            
+                                                <tr>
+                                                    
+                                                    
+                                                        <td>true</td>
+                                                    
+                                                        <td>AB</td>
+                                                    
+                                                        <td>Alba</td>
+                                                    
+                                                        <td>Gel de dus</td>
+                                                    
+                                                        <td>200</td>
+                                                    
+                                                        <td>baxuri</td>
+                                                    
+                                                        <td>sac</td>
+                                                    
+                                                        <td>2090-12-12</td>
+                                                    
+                                                </tr>
+                                            
+                                                <tr>
+                                                    
+                                                    
+                                                        <td>false</td>
+                                                    
+                                                        <td>IF</td>
+                                                    
+                                                        <td>Bucuresti</td>
+                                                    
+                                                        <td>Sapun</td>
+                                                    
+                                                        <td>200</td>
+                                                    
+                                                        <td>l</td>
+                                                    
+                                                        <td>bax bidon 2l</td>
+                                                    
+                                                        <td>2090-12-12</td>
+                                                    
+                                                </tr>
+                                            
+                                        </table>
                                     
-                                        I fill the request clothing form
-                                        
-                                    
-
-                                    
-
                                 </div>
 
                                 
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
                             
                         
 
@@ -2570,7 +2602,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -2628,7 +2660,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
                                         
                                     
 
@@ -2686,7 +2718,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Construction item</small></h2>
+                <h2>Scenario: <small>Donate Feminine Hygiene item</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -2791,7 +2823,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -2907,7 +2939,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request construction button
+                                        I click donate feminine hygiene button
                                         
                                     
 
@@ -2965,7 +2997,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I fill the request construction form
+                                        I fill the donate feminine hygiene form
                                         
                                     
 
@@ -3081,7 +3113,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -3139,7 +3171,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
                                         
                                     
 
@@ -3197,7 +3229,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Medicine item</small></h2>
+                <h2>Scenario: <small>Donate Multiple Feminine Hygiene item</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -3214,7 +3246,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">8</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">7</span>
                         </li>
                     
 
@@ -3302,7 +3334,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -3418,7 +3450,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request medicine item button
+                                        I fill multiple donate feminine hygiene forms
                                         
                                     
 
@@ -3457,63 +3489,79 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                         
                             
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
+                                <div class="scenario-scroll-bar">
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
+                                        <table class="table arguments">
+                                            
+                                            <tr>
+                                                
+                                                
+                                                    <th>has_transportation</th>
+                                                
+                                                    <th>county_coverage</th>
+                                                
+                                                    <th>town</th>
+                                                
+                                                    <th>name</th>
+                                                
+                                                    <th>quantity</th>
+                                                
+                                                    <th>unit_type</th>
+                                                
+                                                    <th>packaging_type</th>
+                                                
+                                                    <th>expiration_date</th>
+                                                
+                                            </tr>
 
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
+                                            
+                                                <tr>
+                                                    
+                                                    
+                                                        <td>true</td>
+                                                    
+                                                        <td>AB</td>
+                                                    
+                                                        <td>Alba</td>
+                                                    
+                                                        <td>Absorbante</td>
+                                                    
+                                                        <td>200</td>
+                                                    
+                                                        <td>baxuri</td>
+                                                    
+                                                        <td>sac</td>
+                                                    
+                                                        <td>2090-12-12</td>
+                                                    
+                                                </tr>
+                                            
+                                                <tr>
+                                                    
+                                                    
+                                                        <td>false</td>
+                                                    
+                                                        <td>IF</td>
+                                                    
+                                                        <td>Bucuresti</td>
+                                                    
+                                                        <td>Deodorant</td>
+                                                    
+                                                        <td>200</td>
+                                                    
+                                                        <td>l</td>
+                                                    
+                                                        <td>bax bidon 2l</td>
+                                                    
+                                                        <td>2090-12-12</td>
+                                                    
+                                                </tr>
+                                            
+                                        </table>
                                     
-                                        I fill the request medicine item form
-                                        
-                                    
-
-                                    
-
                                 </div>
 
                                 
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
                             
                         
 
@@ -3531,10 +3579,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">And </span>
+                                    <span class="keyword highlight">When </span>
 
                                     
-                                        I submit the form
+                                        I click next step button
                                         
                                     
 
@@ -3592,7 +3640,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -3650,7 +3698,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
                                         
                                     
 
@@ -3708,7 +3756,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Sanitary item</small></h2>
+                <h2>Scenario: <small>Donate Textile item</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -3813,7 +3861,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -3929,7 +3977,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request sanitary item button
+                                        I click donate textile button
                                         
                                     
 
@@ -3987,7 +4035,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I fill the request sanitary item form
+                                        I fill the donate textile form
                                         
                                     
 
@@ -4103,7 +4151,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -4161,7 +4209,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
                                         
                                     
 
@@ -4219,7 +4267,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Tent item</small></h2>
+                <h2>Scenario: <small>Donate Construction item</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -4324,7 +4372,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -4440,7 +4488,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request tent button
+                                        I click donate construction button
                                         
                                     
 
@@ -4498,7 +4546,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I fill the request tent form
+                                        I fill the donate construction form
                                         
                                     
 
@@ -4614,7 +4662,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -4672,7 +4720,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
                                         
                                     
 
@@ -4730,7 +4778,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                 </div>
 
-                <h2>Scenario: <small>Request Other item</small></h2>
+                <h2>Scenario: <small>Donate Medicine item</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -4742,12 +4790,20 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
 
                     
-
+                        <li>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">1</span>
+                        </li>
                     
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">8</span>
+                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
                         </li>
                     
 
@@ -4835,7 +4891,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I want to request
+                                        I want to donate
                                         
                                     
 
@@ -4951,7 +5007,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I click request other item button
+                                        I click donate medicine button
                                         
                                     
 
@@ -5009,7 +5065,1631 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I fill the request other item form
+                                        I fill the donate medicine form
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I submit the form
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I see the thank you for donation message
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+                                        <a href="#error8-6-error" data-toggle="collapse">+ Show Error</a>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+                                <div id="error8-6-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>TestingLibraryElementError: Timed out retrying after 4000ms: Unable to find an element with the text: Iți mulțumim pentru generozitate. Resursele pe care le-ai pus la dispoziție s-au înregistrat în sistem și imediat ce le vom aloca și oferi pentru a ajuta mai departe persoanele vulnerabile vom lua legătura cu tine.. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, (script /), (style /)
+(html
+  lang="ro"
+)
+  (head)
+     
+    (meta
+      content="width=device-width"
+      name="viewport"
+    /)
+    (meta
+      charset="utf-8"
+    /)
+    (title)
+      Sprijin de Urgență
+    (/title)
+    (meta
+      content="3"
+      name="next-head-count"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-regular.woff2"
+      rel="preload"
+      type="font/woff2"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-regular.woff"
+      rel="preload"
+      type="font/woff"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-600.woff2"
+      rel="preload"
+      type="font/woff2"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-600.woff"
+      rel="preload"
+      type="font/woff"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-700.woff2"
+      rel="preload"
+      type="font/woff2"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-700.woff"
+      rel="preload"
+      type="font/woff"
+    /)
+    (meta
+      content="Sprijin de urgență."
+      name="description"
+    /)
+    (link
+      href="/favicon/apple-icon-180x180.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    /)
+    (link
+      href="/favicon/favicon-96x96.png"
+      rel="icon"
+      sizes="96x96"
+      type="image/png"
+    /)
+    (link
+      href="/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    /)
+    (link
+      href="/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    /)
+    (link
+      href="/manifest.json"
+      rel="manifest"
+    /)
+    (link
+      href="/favicon/favicon.ico"
+      rel="shortcut icon"
+    /)
+    (link
+      href="/favicon/favicon.ico"
+      rel="icon"
+    /)
+    (meta
+      content="https://sprijindeurgenta.ro/sprijindeurgenta_banner.jpg"
+      property="og:image"
+    /)
+    (meta
+      content="website"
+      property="og:type"
+    /)
+    (meta
+      content="https://sprijindeurgenta.ro"
+      property="og:url"
+    /)
+    (meta
+      content="Sprijin de Urgență"
+      property="og:site_name"
+    /)
+    (meta
+      content="Sprijin de Urgență"
+      property="og:title"
+    /)
+    (meta
+      content="Platformă națională de management de resurse."
+      property="og:description"
+    /)
+    (link
+      as="style"
+      href="/_next/static/css/431a9e36bc4016b2.css"
+      rel="preload"
+    /)
+    (link
+      data-n-g=""
+      href="/_next/static/css/431a9e36bc4016b2.css"
+      rel="stylesheet"
+    /)
+    (noscript
+      data-n-css=""
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/offer-603faf8f528c0a40.js"
+      rel="prefetch"
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/request-f92b091c7a52b766.js"
+      rel="prefetch"
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/about-project-b5d0cdec9aff87e2.js"
+      rel="prefetch"
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/confidentiality-policy-0de5873518de852b.js"
+      rel="prefetch"
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/terms-and-conditions-97e60149291892d4.js"
+      rel="prefetch"
+    /)
+  (/head)
+  (body)
+    (div
+      data-reactroot=""
+      id="__next"
+    )
+      (div
+        class="flex flex-col min-h-full"
+      )
+        (div
+          class="w-full mx-auto"
+        )
+          (div
+            class="bg-gray-50"
+          )
+            (div
+              class="flex items-center 
+          py-3 px-2 container mx-auto"
+            )
+              (div
+                class="max-w-[90px]"
+              )
+                (div
+                  class="leading-none"
+                )
+                  (img
+                    alt="Code 4 Romania logo"
+                    class="object-contain w-full h-full"
+                    height="100%"
+                    src="/code_logo.svg"
+                    width="100%"
+                  /)
+                (/div)
+              (/div)
+              (div
+                class="flex flex-col ml-6 text-sm font-medium text-gray-700 md:flex-row md:gap-1"
+              )
+                (span)
+                  O soluție Code for Romania. 
+                (/span)
+                (a
+                  class="text-blue-900 hover:underline whitespace-nowrap"
+                  href="https://www.code4.ro/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                )
+                  Află mai multe
+                (/a)
+              (/div)
+            (/div)
+          (/div)
+          (div
+            class="border-b-2 border-gray-50"
+          )
+            (div
+              class="container px-2 mx-auto "
+            )
+              (div
+                class="flex items-center justify-between py-4"
+              )
+                (div
+                  class="flex items-center"
+                )
+                  (a
+                    href="/"
+                  )
+                    (div
+                      class="leading-none h-[42px]"
+                    )
+                      (img
+                        alt="Sprijin de urgență"
+                        class="object-contain w-full h-full"
+                        height="100%"
+                        src="/logo.svg"
+                        width="100%"
+                      /)
+                    (/div)
+                  (/a)
+                (/div)
+                (div
+                  class="flex items-center gap-2"
+                )
+                  (div)
+                    (div
+                      class="cursor-pointer"
+                    )
+                      Logout
+                    (/div)
+                  (/div)
+                  (div
+                    class=""
+                  )
+                    (div
+                      class="relative flex"
+                    )
+                      (select
+                        class="block w-full h-10 mt-1 border border-gray-200 rounded-md px-2 py-1.5"
+                        id="locale"
+                        name="locale"
+                      )
+                        (option
+                          disabled=""
+                          hidden=""
+                        /)
+                        (option
+                          selected=""
+                          value="ro"
+                        )
+                          RO
+                        (/option)
+                        (option
+                          value="en"
+                        )
+                          EN
+                        (/option)
+                        (option
+                          value="uk"
+                        )
+                  ...
+    at Object.getElementError (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:449:19)
+    at eval (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:2908:38)
+    at eval (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:2880:17)
+    at eval (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:2929:19)
+    at baseCommandImpl (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:110:16)
+    at commandImpl (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:113:40)
+    at getValue (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:137:23)
+    at resolveValue (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:177:35)</pre>
+                                </div>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        donate item is created
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Donate Sanitary item</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I am a logged in user
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I want to donate
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I click products resource
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I click donate sanitary item button
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I fill the donate sanitary item form
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I submit the form
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I see the thank you for donation message
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+                                        <a href="#error9-6-error" data-toggle="collapse">+ Show Error</a>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+                                <div id="error9-6-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>TestingLibraryElementError: Timed out retrying after 4000ms: Unable to find an element with the text: Iți mulțumim pentru generozitate. Resursele pe care le-ai pus la dispoziție s-au înregistrat în sistem și imediat ce le vom aloca și oferi pentru a ajuta mai departe persoanele vulnerabile vom lua legătura cu tine.. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, (script /), (style /)
+(html
+  lang="ro"
+)
+  (head)
+     
+    (meta
+      content="width=device-width"
+      name="viewport"
+    /)
+    (meta
+      charset="utf-8"
+    /)
+    (title)
+      Sprijin de Urgență
+    (/title)
+    (meta
+      content="3"
+      name="next-head-count"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-regular.woff2"
+      rel="preload"
+      type="font/woff2"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-regular.woff"
+      rel="preload"
+      type="font/woff"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-600.woff2"
+      rel="preload"
+      type="font/woff2"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-600.woff"
+      rel="preload"
+      type="font/woff"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-700.woff2"
+      rel="preload"
+      type="font/woff2"
+    /)
+    (link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/titillium-web-v14-latin-ext_latin-700.woff"
+      rel="preload"
+      type="font/woff"
+    /)
+    (meta
+      content="Sprijin de urgență."
+      name="description"
+    /)
+    (link
+      href="/favicon/apple-icon-180x180.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    /)
+    (link
+      href="/favicon/favicon-96x96.png"
+      rel="icon"
+      sizes="96x96"
+      type="image/png"
+    /)
+    (link
+      href="/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    /)
+    (link
+      href="/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    /)
+    (link
+      href="/manifest.json"
+      rel="manifest"
+    /)
+    (link
+      href="/favicon/favicon.ico"
+      rel="shortcut icon"
+    /)
+    (link
+      href="/favicon/favicon.ico"
+      rel="icon"
+    /)
+    (meta
+      content="https://sprijindeurgenta.ro/sprijindeurgenta_banner.jpg"
+      property="og:image"
+    /)
+    (meta
+      content="website"
+      property="og:type"
+    /)
+    (meta
+      content="https://sprijindeurgenta.ro"
+      property="og:url"
+    /)
+    (meta
+      content="Sprijin de Urgență"
+      property="og:site_name"
+    /)
+    (meta
+      content="Sprijin de Urgență"
+      property="og:title"
+    /)
+    (meta
+      content="Platformă națională de management de resurse."
+      property="og:description"
+    /)
+    (link
+      as="style"
+      href="/_next/static/css/431a9e36bc4016b2.css"
+      rel="preload"
+    /)
+    (link
+      data-n-g=""
+      href="/_next/static/css/431a9e36bc4016b2.css"
+      rel="stylesheet"
+    /)
+    (noscript
+      data-n-css=""
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/offer-603faf8f528c0a40.js"
+      rel="prefetch"
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/request-f92b091c7a52b766.js"
+      rel="prefetch"
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/about-project-b5d0cdec9aff87e2.js"
+      rel="prefetch"
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/confidentiality-policy-0de5873518de852b.js"
+      rel="prefetch"
+    /)
+    (link
+      as="script"
+      href="/_next/static/chunks/pages/terms-and-conditions-97e60149291892d4.js"
+      rel="prefetch"
+    /)
+  (/head)
+  (body)
+    (div
+      data-reactroot=""
+      id="__next"
+    )
+      (div
+        class="flex flex-col min-h-full"
+      )
+        (div
+          class="w-full mx-auto"
+        )
+          (div
+            class="bg-gray-50"
+          )
+            (div
+              class="flex items-center 
+          py-3 px-2 container mx-auto"
+            )
+              (div
+                class="max-w-[90px]"
+              )
+                (div
+                  class="leading-none"
+                )
+                  (img
+                    alt="Code 4 Romania logo"
+                    class="object-contain w-full h-full"
+                    height="100%"
+                    src="/code_logo.svg"
+                    width="100%"
+                  /)
+                (/div)
+              (/div)
+              (div
+                class="flex flex-col ml-6 text-sm font-medium text-gray-700 md:flex-row md:gap-1"
+              )
+                (span)
+                  O soluție Code for Romania. 
+                (/span)
+                (a
+                  class="text-blue-900 hover:underline whitespace-nowrap"
+                  href="https://www.code4.ro/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                )
+                  Află mai multe
+                (/a)
+              (/div)
+            (/div)
+          (/div)
+          (div
+            class="border-b-2 border-gray-50"
+          )
+            (div
+              class="container px-2 mx-auto "
+            )
+              (div
+                class="flex items-center justify-between py-4"
+              )
+                (div
+                  class="flex items-center"
+                )
+                  (a
+                    href="/"
+                  )
+                    (div
+                      class="leading-none h-[42px]"
+                    )
+                      (img
+                        alt="Sprijin de urgență"
+                        class="object-contain w-full h-full"
+                        height="100%"
+                        src="/logo.svg"
+                        width="100%"
+                      /)
+                    (/div)
+                  (/a)
+                (/div)
+                (div
+                  class="flex items-center gap-2"
+                )
+                  (div)
+                    (div
+                      class="cursor-pointer"
+                    )
+                      Logout
+                    (/div)
+                  (/div)
+                  (div
+                    class=""
+                  )
+                    (div
+                      class="relative flex"
+                    )
+                      (select
+                        class="block w-full h-10 mt-1 border border-gray-200 rounded-md px-2 py-1.5"
+                        id="locale"
+                        name="locale"
+                      )
+                        (option
+                          disabled=""
+                          hidden=""
+                        /)
+                        (option
+                          selected=""
+                          value="ro"
+                        )
+                          RO
+                        (/option)
+                        (option
+                          value="en"
+                        )
+                          EN
+                        (/option)
+                        (option
+                          value="uk"
+                        )
+                  ...
+    at Object.getElementError (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:449:19)
+    at eval (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:2908:38)
+    at eval (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:2880:17)
+    at eval (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:2929:19)
+    at baseCommandImpl (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:110:16)
+    at commandImpl (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:113:40)
+    at getValue (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:137:23)
+    at resolveValue (http://127.0.0.1:3000/__cypress/tests?p=cypress/support/index.js:177:35)</pre>
+                                </div>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        donate item is created
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Donate Tent item</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">8</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I am a logged in user
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I want to donate
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I click products resource
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I click donate tent button
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I fill the donate tent form
                                         
                                     
 
@@ -5125,7 +6805,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I see the thank you for request message
+                                        I see the thank you for donation message
                                         
                                     
 
@@ -5183,7 +6863,518 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        request item is created
+                                        donate item is created
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Donate other item</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">8</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I am a logged in user
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I want to donate
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I click products resource
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I click donate other item button
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I fill the donate other item form
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I submit the form
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I see the thank you for donation message
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        donate item is created
                                         
                                     
 
@@ -5275,8 +7466,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     ],
                     datasets: [{
                         data: [
-                            9,
-                            0,
+                            10,
+                            2,
                             0,
                             0,
                             0,
